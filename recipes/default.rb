@@ -8,3 +8,8 @@
 #
 
 include_recipe "apt"
+
+# The following recipe will install
+# rvm along with required gems 
+# (see settings in attributes/default.rb 
+include_recipe "rvm::system"

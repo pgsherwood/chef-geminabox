@@ -7,3 +7,4 @@ long_description 'Installs/Configures geminabox'
 version          '0.1.0'
 
 depends 'apt'
+depends 'rvm'
