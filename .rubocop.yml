@@ -1,0 +1,14 @@
+
+
+Encoding:
+  Enabled: false
+
+
+SingleSpaceBeforeFirstArg:
+  Exclude:
+    - metadata.rb
+
+LineLength:
+  Exclude:
+    - **/default_spec.rb
+

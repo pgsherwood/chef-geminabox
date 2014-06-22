@@ -75,11 +75,18 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         server_root_password: 'rootpass',
         server_debian_password: 'debpass',
         server_repl_password: 'replpass'
+      },
+      'rvm' => { 
+        'vagrant' => {
+          'system_chef_solo' => '/opt/chef/bin/chef-solo'
+        }
       }
+
     }
 
     chef.run_list = [
-        "recipe[geminabox::default]"
+        "recipe[geminabox::default]",
+	"recipe[rvm::vagrant]"
     ]
   end
 end

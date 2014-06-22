@@ -19,6 +19,7 @@ gem 'test-kitchen'
 gem 'kitchen-vagrant'
 gem 'chefspec', '>=3.1'
 gem 'serverspec'
+gem 'rubocop'
 
 # ChefSpec dependencies
 #

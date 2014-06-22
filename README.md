@@ -8,6 +8,8 @@ Ubuntu 12.04
 
 ## Requirements
 
+###Chef Cookbooks
+- [rvm](https://github.com/fnichol/chef-rvm)
 
 ## Attributes
 
@@ -19,11 +21,36 @@ Ubuntu 12.04
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['geminabox']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
+    <td><tt>['geminabox']['port']</tt></td>
+    <td>String</td>
+    <td>Port number where the geminabox service listens</td>
+    <td><tt>8080</tt></td>
   </tr>
+  <tr>
+    <td><tt>['geminabox']['conf_dir']</tt></td>
+    <td>String</td>
+    <td>Directory for geminabox service config files</td>
+    <td><tt>/etc/geminabox</tt></td>
+  </tr>
+    <tr>
+    <td><tt>['geminabox']['log_dir']</tt></td>
+    <td>String</td>
+    <td>Directory for the geminabox service log files</td>
+    <td><tt>/var/log/geminabox</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['geminabox']['data_dir']</tt></td>
+    <td>String</td>
+    <td>Directory for geminabox service data files</td>
+    <td><tt>/var/geminabox-data</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['geminabox']['pid_dir']</tt></td>
+    <td>String</td>
+    <td>Directory for geminabox service PID files</td>
+    <td><tt>/var/run/geminabox</tt></td>
+  </tr>
+
 </table>
 
 ## Usage
