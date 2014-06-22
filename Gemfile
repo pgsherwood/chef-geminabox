@@ -19,3 +19,11 @@ gem 'test-kitchen'
 gem 'kitchen-vagrant'
 gem 'chefspec', '>=3.1'
 gem 'serverspec'
+
+# ChefSpec dependencies
+#
+# All gems loaded through the `chef_gem` resource should be included here
+# because ChefSpec never really converges these resources and thus the gems are
+# never installed during a Chef run. This makes all subsequent `requires` fail.
+#
+gem 'rvm'
